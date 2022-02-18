@@ -56,7 +56,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Clear"/>
                                 <connections>
-                                    <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5V-oG-6gt"/>
+                                    <action selector="btnClear" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zyh-6d-KJW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-JQ-r6a">
@@ -64,7 +64,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Result" titleAlignment="center"/>
                                 <connections>
-                                    <action selector="btnResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HcX-NH-oSq"/>
+                                    <action selector="btnResult" destination="BYZ-38-t0r" eventType="touchUpInside" id="uHp-2g-eie"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAu-bg-FKC">
@@ -96,6 +96,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Calculator" id="53t-QH-Uiv"/>
+                    <connections>
+                        <outlet property="firstField" destination="Wv6-Ch-zp5" id="Zkf-zp-TOM"/>
+                        <outlet property="operatorField" destination="mcs-xI-QOk" id="ypt-79-zZP"/>
+                        <outlet property="resultLabel" destination="RAu-bg-FKC" id="kPH-8J-EwW"/>
+                        <outlet property="secondField" destination="SR8-fE-7oX" id="0mi-pa-PhK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
