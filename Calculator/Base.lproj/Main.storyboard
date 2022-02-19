@@ -38,13 +38,17 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-xI-QOk">
-                                <rect key="frame" x="104.5" y="98" width="111" height="32"/>
+                                <rect key="frame" x="88" y="98" width="144" height="32"/>
                                 <segments>
                                     <segment title="+"/>
                                     <segment title="-"/>
                                     <segment title="*"/>
                                     <segment title="/"/>
+                                    <segment title="√"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentOnClick" destination="BYZ-38-t0r" eventType="valueChanged" id="3qJ-B5-4kc"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SR8-fE-7oX">
                                 <rect key="frame" x="10" y="139" width="300" height="34"/>
@@ -56,7 +60,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Clear"/>
                                 <connections>
-                                    <action selector="btnClear" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zyh-6d-KJW"/>
+                                    <action selector="btnClearOnClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1L-Eo-437"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-JQ-r6a">
@@ -64,7 +68,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Result" titleAlignment="center"/>
                                 <connections>
-                                    <action selector="btnResult" destination="BYZ-38-t0r" eventType="touchUpInside" id="uHp-2g-eie"/>
+                                    <action selector="btnResultOnClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Fx-pG-rMf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAu-bg-FKC">

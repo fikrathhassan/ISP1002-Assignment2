@@ -9,31 +9,43 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var firstValue: Float = 0
-    var secondValue: Float = 0
-    var result: Float = 0
+    var firstValue: Double = 0
+    var secondValue: Double = 0
+    var result: Double = 0
     
     @IBOutlet weak var firstField: UITextField!
     @IBOutlet weak var secondField: UITextField!
     @IBOutlet weak var operatorField: UISegmentedControl!
     @IBOutlet weak var resultLabel: UILabel!
     
+    // change textfield usability on segment click
+    @IBAction func segmentOnClick() {
+        if (operatorField.selectedSegmentIndex == 4) {
+            secondField.isEnabled = false
+        } else {
+            secondField.isEnabled = true
+        }
+    }
+    
     // This button click clear all the textfileds, input and result values
-    @IBAction func btnClear() {
+    @IBAction func btnClearOnClick() {
         firstValue = 0
         secondValue = 0
         result = 0
         firstField.text = "0"
-        secondField.text = "0"
         operatorField.selectedSegmentIndex = 0
+        if (!secondField.isEnabled) {
+            secondField.isEnabled = true
+        }
+        secondField.text = "0"
         resultLabel.text = ""
     }
     
     // This button click shows reult on resultLabel based on the operator selected
-    @IBAction func btnResult() {
+    @IBAction func btnResultOnClick() {
         if (firstField.text != "" && secondField.text != "") {
-            firstValue = Float(firstField.text!)!
-            secondValue = Float(secondField.text!)!
+            firstValue = Double(firstField.text!)!
+            secondValue = Double(secondField.text!)!
             switch operatorField.selectedSegmentIndex {
             case 0:
                 // addition
@@ -47,6 +59,9 @@ class ViewController: UIViewController {
             case 3:
                 // division
                 result = firstValue/secondValue
+            case 4:
+                // square root
+                result = sqrt(firstValue)
             default:
                 print("No cases detected!")
             }
