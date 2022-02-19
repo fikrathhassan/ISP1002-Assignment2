@@ -37,34 +37,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-xI-QOk">
-                                <rect key="frame" x="88" y="98" width="144" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-xI-QOk">
+                                <rect key="frame" x="104.5" y="98" width="111" height="32"/>
                                 <segments>
                                     <segment title="+"/>
                                     <segment title="-"/>
                                     <segment title="*"/>
                                     <segment title="/"/>
-                                    <segment title="√"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentOnClick" destination="BYZ-38-t0r" eventType="valueChanged" id="3qJ-B5-4kc"/>
                                 </connections>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SR8-fE-7oX">
-                                <rect key="frame" x="10" y="139" width="300" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMW-aZ-d1l">
-                                <rect key="frame" x="10" y="183" width="58" height="31"/>
+                                <rect key="frame" x="10" y="224" width="58" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Clear"/>
                                 <connections>
                                     <action selector="btnClearOnClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1L-Eo-437"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-JQ-r6a">
-                                <rect key="frame" x="245.5" y="183" width="64.5" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-JQ-r6a">
+                                <rect key="frame" x="245.5" y="224" width="64.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Result" titleAlignment="center"/>
                                 <connections>
@@ -72,11 +66,30 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAu-bg-FKC">
-                                <rect key="frame" x="160" y="229" width="0.0" height="0.0"/>
+                                <rect key="frame" x="160" y="270" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="cRm-zi-soH">
+                                <rect key="frame" x="34.5" y="139" width="251" height="32"/>
+                                <segments>
+                                    <segment title="√"/>
+                                    <segment title="log"/>
+                                    <segment title="³"/>
+                                    <segment title="sin"/>
+                                    <segment title="cos"/>
+                                    <segment title="tan"/>
+                                </segments>
+                                <connections>
+                                    <action selector="additionalSegmentOnClick" destination="BYZ-38-t0r" eventType="valueChanged" id="0f5-B4-uan"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SR8-fE-7oX">
+                                <rect key="frame" x="10" y="180" width="300" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -86,23 +99,27 @@
                             <constraint firstItem="RAu-bg-FKC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2yp-fc-gQM"/>
                             <constraint firstItem="Wv6-Ch-zp5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="3LS-1y-zbS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SR8-fE-7oX" secondAttribute="trailing" constant="10" id="43o-MO-kZD"/>
+                            <constraint firstItem="cRm-zi-soH" firstAttribute="top" secondItem="mcs-xI-QOk" secondAttribute="bottom" constant="10" id="GCX-99-rYt"/>
                             <constraint firstItem="Wv6-Ch-zp5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="GHv-FL-pYH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wv6-Ch-zp5" secondAttribute="trailing" constant="10" id="Mtp-dt-dU5"/>
                             <constraint firstItem="jkm-JQ-r6a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MMW-aZ-d1l" secondAttribute="trailing" constant="8" symbolic="YES" id="SDo-zl-nrW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jkm-JQ-r6a" secondAttribute="trailing" constant="10" id="SO1-Wm-fe7"/>
                             <constraint firstItem="jkm-JQ-r6a" firstAttribute="trailing" secondItem="SR8-fE-7oX" secondAttribute="trailing" id="SWg-sw-l1C"/>
+                            <constraint firstItem="SR8-fE-7oX" firstAttribute="top" secondItem="cRm-zi-soH" secondAttribute="bottom" constant="10" id="ef3-w7-eKV"/>
+                            <constraint firstItem="cRm-zi-soH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="im6-Uh-smF"/>
                             <constraint firstItem="mcs-xI-QOk" firstAttribute="top" secondItem="Wv6-Ch-zp5" secondAttribute="bottom" constant="10" id="jGk-Gc-2bS"/>
                             <constraint firstItem="jkm-JQ-r6a" firstAttribute="top" secondItem="SR8-fE-7oX" secondAttribute="bottom" constant="10" id="qBl-wX-qGZ"/>
                             <constraint firstItem="MMW-aZ-d1l" firstAttribute="top" secondItem="SR8-fE-7oX" secondAttribute="bottom" constant="10" id="rsa-cR-6k4"/>
                             <constraint firstItem="mcs-xI-QOk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t94-nw-hOp"/>
                             <constraint firstItem="MMW-aZ-d1l" firstAttribute="leading" secondItem="SR8-fE-7oX" secondAttribute="leading" id="vdj-T4-iqc"/>
-                            <constraint firstItem="SR8-fE-7oX" firstAttribute="top" secondItem="mcs-xI-QOk" secondAttribute="bottom" constant="10" id="zdk-G0-e6D"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Calculator" id="53t-QH-Uiv"/>
                     <connections>
+                        <outlet property="additionalOperatorField" destination="cRm-zi-soH" id="W6o-fa-O7c"/>
                         <outlet property="firstField" destination="Wv6-Ch-zp5" id="Zkf-zp-TOM"/>
                         <outlet property="operatorField" destination="mcs-xI-QOk" id="ypt-79-zZP"/>
+                        <outlet property="resultButton" destination="jkm-JQ-r6a" id="exj-9n-dkQ"/>
                         <outlet property="resultLabel" destination="RAu-bg-FKC" id="kPH-8J-EwW"/>
                         <outlet property="secondField" destination="SR8-fE-7oX" id="0mi-pa-PhK"/>
                     </connections>
