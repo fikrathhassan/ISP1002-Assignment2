@@ -48,6 +48,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="dBy-rt-6aH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDL-ki-Pzw">
                                         <rect key="frame" x="88" y="125" width="42" height="50"/>
@@ -56,6 +59,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="DSo-gj-oD8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ia9-jS-9mt">
                                         <rect key="frame" x="38" y="125" width="43" height="50"/>
@@ -64,6 +70,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="rgS-n3-UG1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqQ-A0-LF9">
                                         <rect key="frame" x="138.5" y="67" width="43" height="50"/>
@@ -72,6 +81,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="3Tv-Mp-nhk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34v-7f-D9j">
                                         <rect key="frame" x="40" y="67" width="41" height="50"/>
@@ -80,6 +92,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="jNq-d9-ZSG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPr-fZ-hIG">
                                         <rect key="frame" x="89" y="67" width="42" height="50"/>
@@ -88,6 +103,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="o2V-Xn-Ba2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svl-sg-omB">
                                         <rect key="frame" x="138.5" y="183" width="43" height="50"/>
@@ -96,6 +114,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="c61-ff-Jtk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khV-s3-QGf">
                                         <rect key="frame" x="40" y="183" width="38" height="50"/>
@@ -104,6 +125,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="ZeG-hU-Dob"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xn-e2-I8Q">
                                         <rect key="frame" x="89.5" y="183" width="41.5" height="50"/>
@@ -112,6 +136,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="fCk-pi-BIe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hg-VL-YVb">
                                         <rect key="frame" x="139" y="241" width="42.5" height="50"/>
@@ -120,6 +147,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="lnE-mu-Gmd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apR-gG-HlY">
                                         <rect key="frame" x="88" y="241" width="43" height="50"/>
@@ -128,6 +158,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="7Ga-qb-9O4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0A-eR-ag1">
                                         <rect key="frame" x="192" y="125" width="38.5" height="50"/>
@@ -137,6 +170,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="dYp-3Y-noV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOz-Jl-wLo">
                                         <rect key="frame" x="189" y="67" width="43" height="50"/>
@@ -146,6 +182,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="aEt-L9-vBX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3E-yW-EeY">
                                         <rect key="frame" x="192" y="183" width="37.5" height="50"/>
@@ -155,6 +194,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="lfV-u9-CDe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGC-WS-5Bf">
                                         <rect key="frame" x="189" y="241" width="43" height="50"/>
@@ -164,6 +206,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="Uu5-db-z9Y"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAY-f6-5QT">
                                         <rect key="frame" x="244" y="134" width="48.5" height="32"/>
@@ -173,6 +218,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="gQU-NV-d2x"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scs-Mn-3J8">
                                         <rect key="frame" x="245" y="192" width="46" height="32"/>
@@ -182,6 +230,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="TnO-qa-g0D"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoq-9i-Aqd">
                                         <rect key="frame" x="247" y="241" width="43" height="50"/>
@@ -191,6 +242,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="1wh-Tp-7nl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8L-nw-czo">
                                         <rect key="frame" x="246" y="76" width="44" height="32"/>
@@ -200,6 +254,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="h7u-tt-s9y"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLf-io-yqg">
                                         <rect key="frame" x="196" y="27" width="30" height="32"/>
@@ -209,6 +266,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="9Z6-JF-eiX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Er7-vL-uyt">
                                         <rect key="frame" x="245" y="27" width="46" height="32"/>
@@ -218,6 +278,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="0nn-OW-ZgP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dg6-RG-ZsG">
                                         <rect key="frame" x="142.5" y="27" width="35" height="32"/>
@@ -227,6 +290,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="GEc-uF-DDP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXH-rE-3uh">
                                         <rect key="frame" x="40" y="27" width="91" height="32"/>
@@ -236,6 +302,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonOnClick:" destination="bvz-VB-whg" eventType="touchUpInside" id="sTN-k2-7IO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.88618618680029804" green="0.88618618680029804" blue="0.88618618680029804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -303,6 +372,32 @@
                             <constraint firstItem="ccB-6Y-dd2" firstAttribute="trailing" secondItem="oav-TA-hlX" secondAttribute="trailing" id="keP-Db-Y3q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="ZGC-WS-5Bf" id="9cl-qh-wRz"/>
+                        <outlet property="clearButton" destination="vXH-rE-3uh" id="JpM-ef-x0V"/>
+                        <outlet property="cosButton" destination="gAY-f6-5QT" id="lWa-k1-7Jo"/>
+                        <outlet property="cubeButton" destination="CLf-io-yqg" id="28w-NK-nJG"/>
+                        <outlet property="divideButton" destination="OOz-Jl-wLo" id="LPL-Lp-Hm5"/>
+                        <outlet property="eightButton" destination="YPr-fZ-hIG" id="RtU-nL-ebA"/>
+                        <outlet property="equalButton" destination="Yoq-9i-Aqd" id="oad-6r-TYd"/>
+                        <outlet property="fiveButton" destination="YDL-ki-Pzw" id="vra-kG-abb"/>
+                        <outlet property="fourButton" destination="ia9-jS-9mt" id="rl3-WF-AUq"/>
+                        <outlet property="logButton" destination="Er7-vL-uyt" id="FzK-Kk-5Lq"/>
+                        <outlet property="multiplyButton" destination="T0A-eR-ag1" id="E4s-sp-Xhl"/>
+                        <outlet property="nineButton" destination="LqQ-A0-LF9" id="87c-wU-WV0"/>
+                        <outlet property="oneButton" destination="khV-s3-QGf" id="xvV-SE-Vgj"/>
+                        <outlet property="pointButton" destination="5hg-VL-YVb" id="HgI-N0-c8r"/>
+                        <outlet property="resultLabel" destination="HGD-K5-RQW" id="sPR-pv-yxm"/>
+                        <outlet property="sevenButton" destination="34v-7f-D9j" id="qgG-FZ-WLh"/>
+                        <outlet property="sinButton" destination="N8L-nw-czo" id="ZTm-ZP-fkm"/>
+                        <outlet property="sixButton" destination="VVI-rx-vVB" id="08b-kq-mpv"/>
+                        <outlet property="squareRootButton" destination="dg6-RG-ZsG" id="3S7-aw-d2S"/>
+                        <outlet property="subtractButton" destination="h3E-yW-EeY" id="m1H-Zl-3cp"/>
+                        <outlet property="tanButton" destination="Scs-Mn-3J8" id="fNp-io-2Jx"/>
+                        <outlet property="threeButton" destination="Svl-sg-omB" id="Yxa-dE-PRi"/>
+                        <outlet property="twoButton" destination="6xn-e2-I8Q" id="CYa-Ax-VRc"/>
+                        <outlet property="zeroButton" destination="apR-gG-HlY" id="ua2-bV-AQA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMA-6o-8hI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
