@@ -28,6 +28,12 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-A4-ias">
+                                        <rect key="frame" x="160" y="90" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -35,6 +41,8 @@
                                 </accessibility>
                                 <constraints>
                                     <constraint firstItem="HGD-K5-RQW" firstAttribute="centerY" secondItem="0Fg-Ny-ZGl" secondAttribute="centerY" id="6hu-0L-3yt"/>
+                                    <constraint firstItem="Xmb-A4-ias" firstAttribute="centerY" secondItem="0Fg-Ny-ZGl" secondAttribute="centerY" id="EXR-uD-bmz"/>
+                                    <constraint firstItem="Xmb-A4-ias" firstAttribute="centerX" secondItem="0Fg-Ny-ZGl" secondAttribute="centerX" id="LvB-18-83j"/>
                                     <constraint firstItem="HGD-K5-RQW" firstAttribute="centerX" secondItem="0Fg-Ny-ZGl" secondAttribute="centerX" id="Yav-6T-8En"/>
                                 </constraints>
                             </view>
@@ -382,12 +390,13 @@
                         <outlet property="equalButton" destination="Yoq-9i-Aqd" id="oad-6r-TYd"/>
                         <outlet property="fiveButton" destination="YDL-ki-Pzw" id="vra-kG-abb"/>
                         <outlet property="fourButton" destination="ia9-jS-9mt" id="rl3-WF-AUq"/>
+                        <outlet property="inputLabel" destination="HGD-K5-RQW" id="ybs-8j-MqE"/>
                         <outlet property="logButton" destination="Er7-vL-uyt" id="FzK-Kk-5Lq"/>
                         <outlet property="multiplyButton" destination="T0A-eR-ag1" id="E4s-sp-Xhl"/>
                         <outlet property="nineButton" destination="LqQ-A0-LF9" id="87c-wU-WV0"/>
                         <outlet property="oneButton" destination="khV-s3-QGf" id="xvV-SE-Vgj"/>
                         <outlet property="pointButton" destination="5hg-VL-YVb" id="HgI-N0-c8r"/>
-                        <outlet property="resultLabel" destination="HGD-K5-RQW" id="sPR-pv-yxm"/>
+                        <outlet property="resultLabel" destination="Xmb-A4-ias" id="xGO-hi-wzj"/>
                         <outlet property="sevenButton" destination="34v-7f-D9j" id="qgG-FZ-WLh"/>
                         <outlet property="sinButton" destination="N8L-nw-czo" id="ZTm-ZP-fkm"/>
                         <outlet property="sixButton" destination="VVI-rx-vVB" id="08b-kq-mpv"/>
@@ -408,7 +417,7 @@
             <objects>
                 <navigationController id="QMe-cX-ChQ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GCa-lp-yZj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

@@ -11,10 +11,12 @@ class NewViewController: UIViewController {
     
     var firstValue: Double = 0
     var secondValue: Double = 0
-    var operatorValue: String!
-    var result: Double = 0
-
+    var operatorValue: String = operators.add.rawValue
+    let error = "Please enter a value first"
+    
+    @IBOutlet weak var inputLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
+    
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var squareRootButton: UIButton!
     @IBOutlet weak var cubeButton: UIButton!
@@ -39,89 +41,199 @@ class NewViewController: UIViewController {
     @IBOutlet weak var eightButton: UIButton!
     @IBOutlet weak var nineButton: UIButton!
     
+    // methods used for each button click
     @IBAction func buttonOnClick(_ sender: UIButton) {
+        showInputLabel()
         switch sender {
         case zeroButton:
-            resultLabel.text = resultLabel.text! + "0"
+            inputLabel.text = inputLabel.text! + "0"
         case pointButton:
-            resultLabel.text = resultLabel.text! + "."
+            inputLabel.text = inputLabel.text! + "."
         case oneButton:
-            resultLabel.text = resultLabel.text! + "1"
+            inputLabel.text = inputLabel.text! + "1"
         case twoButton:
-            resultLabel.text = resultLabel.text! + "2"
+            inputLabel.text = inputLabel.text! + "2"
         case threeButton:
-            resultLabel.text = resultLabel.text! + "3"
+            inputLabel.text = inputLabel.text! + "3"
         case fourButton:
-            resultLabel.text = resultLabel.text! + "4"
+            inputLabel.text = inputLabel.text! + "4"
         case fiveButton:
-            resultLabel.text = resultLabel.text! + "5"
+            inputLabel.text = inputLabel.text! + "5"
         case sixButton:
-            resultLabel.text = resultLabel.text! + "6"
+            inputLabel.text = inputLabel.text! + "6"
         case sevenButton:
-            resultLabel.text = resultLabel.text! + "7"
+            inputLabel.text = inputLabel.text! + "7"
         case eightButton:
-            resultLabel.text = resultLabel.text! + "8"
+            inputLabel.text = inputLabel.text! + "8"
         case nineButton:
-            resultLabel.text = resultLabel.text! + "9"
+            inputLabel.text = inputLabel.text! + "9"
         case addButton:
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            firstValue = Double(inputLabel.text!)!
             operatorValue = operators.add.rawValue
-            firstValue = Double(resultLabel.text!)!
-            clearLabel()
+            clearInputLabel()
         case subtractButton:
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            firstValue = Double(inputLabel.text!)!
             operatorValue = operators.subtract.rawValue
-            firstValue = Double(resultLabel.text!)!
-            clearLabel()
+            clearInputLabel()
         case multiplyButton:
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            firstValue = Double(inputLabel.text!)!
             operatorValue = operators.multiply.rawValue
-            firstValue = Double(resultLabel.text!)!
-            clearLabel()
+            clearInputLabel()
         case divideButton:
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            firstValue = Double(inputLabel.text!)!
             operatorValue = operators.divide.rawValue
-            firstValue = Double(resultLabel.text!)!
-            clearLabel()
+            clearInputLabel()
         case squareRootButton:
-            firstValue = Double(resultLabel.text!)!
+            // calculates square root
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            firstValue = Double(inputLabel.text!)!
+            resultLabel.text = String(sqrt(firstValue))
+            showResultLabel()
         case logButton:
-            firstValue = Double(resultLabel.text!)!
+            // calculates log
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            firstValue = Double(inputLabel.text!)!
+            resultLabel.text = String(log(firstValue))
+            showResultLabel()
         case cubeButton:
-            firstValue = Double(resultLabel.text!)!
+            // calculates cube
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            firstValue = Double(inputLabel.text!)!
+            resultLabel.text = String(firstValue*firstValue*firstValue)
+            showResultLabel()
         case sinButton:
-            firstValue = Double(resultLabel.text!)!
+            // calculates sin
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            firstValue = Double(inputLabel.text!)!
+            resultLabel.text = String(sin(firstValue))
+            showResultLabel()
         case cosButton:
-            firstValue = Double(resultLabel.text!)!
+            // calculates cos
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            firstValue = Double(inputLabel.text!)!
+            resultLabel.text = String(cos(firstValue))
+            showResultLabel()
         case tanButton:
-            firstValue = Double(resultLabel.text!)!
+            // calculates tan
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            firstValue = Double(inputLabel.text!)!
+            resultLabel.text = String(tan(firstValue))
+            showResultLabel()
         case clearButton:
-            clearLabel()
+            clear()
         case equalButton:
-            secondValue = Double(resultLabel.text!)!
+            if (inputLabel.text == "") {
+                print(error)
+                return
+            }
+            secondValue = Double(inputLabel.text!)!
             switch operatorValue {
             case operators.add.rawValue:
+                // addition
                 resultLabel.text = String(firstValue+secondValue)
             case operators.subtract.rawValue:
+                // subtraction
                 resultLabel.text = String(firstValue-secondValue)
             case operators.multiply.rawValue:
+                // multiplication
                 resultLabel.text = String(firstValue*secondValue)
             case operators.divide.rawValue:
+                // divison
                 resultLabel.text = String(firstValue/secondValue)
             default:
                 print("")
             }
+            showResultLabel()
         default:
             print("")
         }
     }
     
+    // enumerators used avoid errors
     enum operators: String {
         case add = "+", subtract = "-", multiply = "*", divide = "/"
     }
     
-    func clearLabel() {
+    // this method clears value in inputLabel
+    func clearInputLabel() {
+        inputLabel.text = ""
+    }
+    
+    /*
+     this method is called when clear button is clicked. It resets everything to default values
+    */
+    func clear() {
+        firstValue = 0
+        secondValue = 0
+        operatorValue = operators.add.rawValue
+        showInputLabel()
+        inputLabel.text = ""
         resultLabel.text = ""
+    }
+    
+    /*
+     this method shows inputLabel, when user enters input and hides resultLabel, if shown
+     */
+    func showInputLabel() {
+        if (inputLabel.isHidden) {
+            inputLabel.isHidden = false
+        }
+        if (!resultLabel.isHidden) {
+            resultLabel.isHidden = true
+        }
+    }
+    
+    /*
+     this method shows resultLabel, when user clicked for result and hides & clears inputLabel values
+     */
+    func showResultLabel() {
+        if (!inputLabel.isHidden) {
+            inputLabel.isHidden = true
+        }
+        if (resultLabel.isHidden) {
+            resultLabel.isHidden = false
+        }
+        clearInputLabel()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        clearInputLabel()
     }
 
 }
