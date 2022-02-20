@@ -30,6 +30,7 @@ class NewViewController: UIViewController {
     @IBOutlet weak var multiplyButton: UIButton!
     @IBOutlet weak var divideButton: UIButton!
     @IBOutlet weak var pointButton: UIButton!
+    @IBOutlet weak var plusMinusButton: UIButton!
     @IBOutlet weak var zeroButton: UIButton!
     @IBOutlet weak var oneButton: UIButton!
     @IBOutlet weak var twoButton: UIButton!
@@ -45,10 +46,16 @@ class NewViewController: UIViewController {
     @IBAction func buttonOnClick(_ sender: UIButton) {
         showInputLabel()
         switch sender {
-        case zeroButton:
-            inputLabel.text = inputLabel.text! + "0"
         case pointButton:
             inputLabel.text = inputLabel.text! + "."
+        case plusMinusButton:
+            if (inputLabel.text?.first == "-") {
+                inputLabel.text = inputLabel.text?.replacingOccurrences(of: "-", with: "")
+            } else {
+                inputLabel.text = "-" + inputLabel.text!
+            }
+        case zeroButton:
+            inputLabel.text = inputLabel.text! + "0"
         case oneButton:
             inputLabel.text = inputLabel.text! + "1"
         case twoButton:
